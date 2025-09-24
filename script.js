@@ -4,7 +4,7 @@ const vibrateButton = document.querySelector('#vibrate');
 function showKeyboard() {
   inputBox.focus();
   inputBox.select();
-  window.navigator.virtualKeyboard?.show()
+  setTimeout(() => {window.navigator.virtualKeyboard?.show()}, 750);
 }
 function vibrate() {
   window.navigator.vibrate(200);
